@@ -19,7 +19,7 @@
 
     <article class="card policy">
       <h1>Privacy Policy: Charmfall</h1>
-      <p class="updated">Last updated: 6 October 2026</p>
+      <p class="updated">Last updated: 8 October 2026</p>
 
       <p>Charmfall ("the app") is made by Picarol Games ("we", "us"). This policy explains what
       information the app collects, why, and the choices you have.</p>
@@ -30,10 +30,11 @@
         <li>Your progress (best score, saved game, settings) stays on your device.</li>
         <li>The game is free and shows ads from Google AdMob, such as videos you can choose to watch to get
         more power-ups.</li>
-        <li>We use Google Firebase Analytics to understand how the game is played, so we can improve it.</li>
+        <li>We use Google Firebase Analytics to understand how the game is played, so we can improve it, and
+        Firebase Crashlytics to learn when the game crashes or hits an error, so we can fix it.</li>
         <li>In the European Economic Area, the United Kingdom and Switzerland we ask for your choice before
-        ads are personalised or analytics are collected, and you can change it at any time in the game's
-        settings.</li>
+        ads are personalised or analytics and crash reports are collected, and you can change it at any
+        time in the game's settings.</li>
       </ul>
 
       <h2>Information stored on your device</h2>
@@ -72,11 +73,11 @@
       open the app it shows a consent form from Google, based on the IAB Transparency and Consent
       Framework. Your answers decide whether information may be stored on and read from your device,
       whether ads may be personalised, and which ad partners may process your data. We only turn on Firebase
-      Analytics if you agree to information being stored on your device.</p>
+      Analytics and Firebase Crashlytics if you agree to information being stored on your device.</p>
       <p>You can change your choices at any time from <strong>Privacy options</strong> in the game's
       settings.</p>
-      <p>Where the GDPR applies, we rely on your consent for analytics, for storing and reading information
-      on your device and for personalised ads. Non-personalised ads rely on our legitimate interest in
+      <p>Where the GDPR applies, we rely on your consent for analytics, for crash reports, for storing and
+      reading information on your device and for personalised ads. Non-personalised ads rely on our legitimate interest in
       keeping the game free, as described in the consent form, where you can also object to it.</p>
 
       <h2>Information collected through Firebase Analytics</h2>
@@ -97,6 +98,28 @@
       <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>.</p>
       <p>Analytics data is kept for 2 months and then deleted automatically.</p>
 
+      <h2>Crash reports from Firebase Crashlytics</h2>
+      <p>The app uses Firebase Crashlytics, a service provided by Google LLC, to tell us when the game crashes or
+      runs into an error, so we can find the cause and keep the game working on every phone. When that happens,
+      Crashlytics sends a report with:</p>
+      <ul>
+        <li>the error or crash itself: what went wrong and where in the game's code (a stack trace);</li>
+        <li>device and app information at that moment (device model, operating system version, app version, free
+        memory and disk space, whether the app was in the foreground, screen orientation);</li>
+        <li>a Crashlytics installation identifier, a random identifier for this installation that tells us how many
+        players a problem affects, and the Firebase installation ID;</li>
+        <li>a short trail of what the game was doing just before: the screen that was open, and when a game started
+        and ended with the game's random identifier, so a crash can be matched to that game in our analytics;</li>
+        <li>the game settings from Remote Config that were active at the time.</li>
+      </ul>
+      <p>Crash reports don't include your name, an account, your contacts or your location; the identifiers
+      above are random and belong to this installation of the game.</p>
+      <p>Crashlytics follows the same choice as analytics. If you have not agreed, or have withdrawn your
+      agreement, reports are not sent; the app keeps them on your device, and sends them only if you agree
+      later. We use crash reports only to fix problems in the game, and we do not sell them.</p>
+      <p>Google keeps crash reports and their identifiers for 90 days and then deletes them. You can read how
+      Firebase handles this data at <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
+
       <h2>Game settings from Firebase Remote Config</h2>
       <p>The app downloads a few game settings from Firebase Remote Config, a service provided by Google LLC,
       so we can adjust the game (for example, from which point a banner ad is shown) without an app update. To do
@@ -107,7 +130,8 @@
       <h2>Your choices</h2>
       <ul>
         <li>In the European Economic Area, the United Kingdom and Switzerland, you can change your consent
-        choices at any time from <strong>Privacy options</strong> in the game's settings.</li>
+        choices, analytics and crash reports included, at any time from <strong>Privacy options</strong> in the game's
+        settings.</li>
         <li>You can reset or delete your Android advertising ID, or opt out of personalised ads, in your
         phone's settings (Settings ▸ Privacy ▸ Ads, or Settings ▸ Google ▸ Ads).</li>
         <li>You can stop all collection at any time by uninstalling the app.</li>
