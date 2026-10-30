@@ -19,17 +19,20 @@
 
     <article class="card policy">
       <h1>Privacy Policy: Charmfall</h1>
-      <p class="updated">Last updated: 8 October 2026</p>
+      <p class="updated">Last updated: 30 October 2026</p>
 
       <p>Charmfall ("the app") is made by Picarol Games ("we", "us"). This policy explains what
       information the app collects, why, and the choices you have.</p>
 
       <h2>The short version</h2>
       <ul class="tldr">
-        <li>You don't need an account, and we don't ask for your name, email or contacts.</li>
-        <li>Your progress (best score, saved game, settings) stays on your device.</li>
-        <li>The game is free and shows ads from Google AdMob, such as videos you can choose to watch to get
-        more power-ups.</li>
+        <li>You don't need to sign up, and we don't ask for your name, email or contacts. The game gives you an
+        anonymous account by itself.</li>
+        <li>Your best score, saved game and settings stay on your device. Your coins, power-ups and daily streak
+        are kept on our server, so they can come back if you reinstall or change phone.</li>
+        <li>The game is free to play. It shows ads from Google AdMob, such as videos you can choose to watch to get
+        more power-ups, and it sells optional coin packs and bundles through Google Play and the App Store. We
+        never see your card or payment details.</li>
         <li>We use Google Firebase Analytics to understand how the game is played, so we can improve it, and
         Firebase Crashlytics to learn when the game crashes or hits an error, so we can fix it.</li>
         <li>In the European Economic Area, the United Kingdom and Switzerland we ask for your choice before
@@ -40,7 +43,8 @@
       </ul>
 
       <h2>Information stored on your device</h2>
-      <p>The app saves the following on your device only. We never receive it:</p>
+      <p>The app saves the following on your device only. We never receive it, apart from the number of games
+      played (see the next section):</p>
       <ul>
         <li>your best score;</li>
         <li>the game in progress, so you can continue where you left off;</li>
@@ -49,6 +53,47 @@
         when the game starts showing a banner ad).</li>
       </ul>
       <p>Uninstalling the app, or clearing its data in your device's settings, deletes all of it.</p>
+
+      <h2>Your account, coins and power-ups</h2>
+      <p>Your coins, power-ups and daily streak are kept on a server of ours that runs on Google Firebase
+      (Firebase Authentication, Cloud Firestore and Cloud Functions), services of Google LLC, in the United
+      States. This is so they aren't lost with your phone, and so a purchase or a reward is given exactly once.</p>
+      <p>The first time you play, the app creates an anonymous account for you: a random identifier with no
+      name or email attached. On the server we keep:</p>
+      <ul>
+        <li>that identifier;</li>
+        <li>your balance of coins and power-ups, and your daily streak;</li>
+        <li>a record of what changed them (what was given, why and when), kept for 90 days;</li>
+        <li>the highest number of games played on the account, used to choose which progress to keep when two
+        phones have played;</li>
+        <li>the link described below, which lets your progress come back.</li>
+      </ul>
+      <p>To check that requests come from the real game, the app uses Firebase App Check, with Google Play
+      Integrity on Android and Apple's App Attest on iPhone.</p>
+      <p><strong>Getting your progress back.</strong> On Android, the game uses Google Play Games' Recall service: Google
+      keeps a random token for us, linked to your Play Games profile, and we don't receive your Play Games name
+      or email. On iPhone, the account stays in your phone's Keychain through a reinstall, and if you are signed
+      in to Game Center we also keep your Game Center player identifiers (which Apple creates for each player),
+      so that a new iPhone on the same Game Center account finds your progress.</p>
+      <p>We keep your account and balances so that your progress is there whenever you come back. Uninstalling
+      the app doesn't delete them. To have them deleted, contact us: because the account has no name or email,
+      we will ask for something that identifies it, such as a purchase's order number.</p>
+      <h2>Purchases</h2>
+      <p>Charmfall sells optional coin packs and bundles. Google Play or Apple's App Store handles the payment,
+      under its own terms and privacy policy, and we never see your card or payment details.</p>
+      <p>When you buy, the store gives the app a purchase token or a signed transaction. The app sends it to our
+      server, which checks it with the store and gives you what you bought, once. We keep a record of each
+      purchase: your account identifier, the store, the product and quantity, what you were given, the store's
+      order number and the date. We keep it for as long as we need it to handle refunds and chargebacks and to
+      meet our tax and accounting duties.</p>
+      <p>If a purchase is refunded, the store tells us and we take back what it gave you, stopping at zero. After
+      two refunds on an account, we pause purchases on it until you contact us.</p>
+      <p>Firebase Analytics records purchases by itself (the product, its price and currency, the date). The app
+      reaches the stores through Unity's In-App Purchasing library, which sends Unity technical information
+      about how the library is working.</p>
+      <p>Where the GDPR applies, we keep your account and purchase records to provide the game and what you
+      bought (performance of a contract), to meet our tax and accounting duties (legal obligation) and to
+      prevent fraud and abuse (our legitimate interest).</p>
 
       <h2>Ads (Google AdMob)</h2>
       <p>The app shows ads provided by Google AdMob, a service of Google LLC (Google Ireland Limited for
@@ -68,6 +113,8 @@
       <p>We don't receive your identity from AdMob, only reports such as how many ads were shown and how
       much they earned. With your consent, AdMob also reports the ads you see, and what they earned, to our
       Firebase Analytics (see below).</p>
+      <p>When you watch a rewarded video, AdMob also tells our server, with your account identifier, that it was
+      watched, so the reward is given once. We keep that record for 90 days.</p>
       <p>Read <a href="https://policies.google.com/technologies/ads">how Google uses information for
       advertising</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses
       data from apps that use its services</a>.</p>
@@ -100,6 +147,7 @@
       <ul>
         <li>events in the game (for example, a run started or ended, a power-up used, the score reached);</li>
         <li>ad events (an ad shown, a video watched to the end, the revenue it earned, an ad that failed to load);</li>
+        <li>purchases (the product, its price and currency);</li>
         <li>device and app information (device model, operating system version, app version, language, screen size);</li>
         <li>an app-instance identifier and, where your device allows it, its advertising identifier (the
         Android advertising ID, or on iPhone the IDFA only if you allowed tracking);</li>
@@ -150,7 +198,8 @@
         <li>On Android, you can reset or delete your advertising ID, or opt out of personalised ads, in your
         phone's settings (Settings ▸ Privacy ▸ Ads, or Settings ▸ Google ▸ Ads).</li>
         <li>On iPhone, you can allow or stop tracking at any time in Settings ▸ Privacy &amp; Security ▸ Tracking.</li>
-        <li>You can stop all collection at any time by uninstalling the app.</li>
+        <li>You can stop all collection at any time by uninstalling the app. What our server already holds stays
+        until you ask us to delete it.</li>
         <li>If you live in the European Economic Area, the United Kingdom or Switzerland, you have the right
         to access, correct or delete personal data and to object to its processing. To exercise these
         rights, contact us at the address below. You can also complain to your local data protection
