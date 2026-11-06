@@ -19,15 +19,17 @@
 
     <article class="card policy">
       <h1>Privacy Policy: Charmfall</h1>
-      <p class="updated">Last updated: 30 October 2026</p>
+      <p class="updated">Last updated: 6 November 2026</p>
 
       <p>Charmfall ("the app") is made by Picarol Games ("we", "us"). This policy explains what
       information the app collects, why, and the choices you have.</p>
 
       <h2>The short version</h2>
       <ul class="tldr">
-        <li>You don't need to sign up, and we don't ask for your name, email or contacts. The game gives you an
-        anonymous account by itself.</li>
+        <li>You don't need to sign up, and we don't ask for your email or contacts. The game gives you an
+        anonymous account by itself, with a generated game name you can replace with one you type.</li>
+        <li>The weekly leaderboards and your profile show other players your game name, avatar, country flag,
+        scores, best game and records. Friends you add see you on the Friends board.</li>
         <li>Your best score, saved game and settings stay on your device. Your coins, power-ups and daily streak
         are kept on our server, so they can come back if you reinstall or change phone.</li>
         <li>The game is free to play. It shows ads from Google AdMob, such as videos you can choose to watch to get
@@ -44,7 +46,7 @@
 
       <h2>Information stored on your device</h2>
       <p>The app saves the following on your device only. We never receive it, apart from the number of games
-      played (see the next section):</p>
+      played and a summary of each finished game (see the next sections):</p>
       <ul>
         <li>your best score;</li>
         <li>the game in progress, so you can continue where you left off;</li>
@@ -59,7 +61,8 @@
       (Firebase Authentication, Cloud Firestore and Cloud Functions), services of Google LLC, in the United
       States. This is so they aren't lost with your phone, and so a purchase or a reward is given exactly once.</p>
       <p>The first time you play, the app creates an anonymous account for you: a random identifier with no
-      name or email attached. On the server we keep:</p>
+      email attached. Its only name is the game name described under "Leaderboards, profile and friends". On the
+      server we keep:</p>
       <ul>
         <li>that identifier;</li>
         <li>your balance of coins and power-ups, and your daily streak;</li>
@@ -76,8 +79,55 @@
       in to Game Center we also keep your Game Center player identifiers (which Apple creates for each player),
       so that a new iPhone on the same Game Center account finds your progress.</p>
       <p>We keep your account and balances so that your progress is there whenever you come back. Uninstalling
-      the app doesn't delete them. To have them deleted, contact us: because the account has no name or email,
-      we will ask for something that identifies it, such as a purchase's order number.</p>
+      the app doesn't delete them. To have them deleted, follow <a href="../delete-data/">these steps</a>: because
+      the account has no email, we will ask for something that identifies it, such as your friend code or a
+      purchase's order number.</p>
+
+      <h2>Leaderboards, profile and friends</h2>
+      <p>Charmfall has weekly leaderboards (World, your country and your friends) and a profile for every player.
+      They are kept on the same server as your coins.</p>
+      <p><strong>What other players see.</strong> Anyone playing Charmfall can see, on the leaderboards and on your
+      profile:</p>
+      <ul>
+        <li>your game name: one the game generates for you (such as "Lucky Clover 42"), or one you type;</li>
+        <li>your avatar (a charm and a colour);</li>
+        <li>your country's flag, which follows your phone's region setting;</li>
+        <li>your best score of each week and your rank;</li>
+        <li>your best game (its score, final board, length and stats, such as your biggest combo), your records,
+        and your past weeks (the scores, ranks and rewards of the 12 most recent weeks you played, and totals such
+        as your best rank).</li>
+      </ul>
+      <p>Other players don't see your coins, your purchases or your list of friends.</p>
+      <p><strong>Your name.</strong> A name you type is 3 to 16 characters, and our server checks it against a word
+      filter before anyone sees it. Other players see it, so don't use your full name or other personal details.
+      The first time you type a name, you accept the <a href="../terms/">terms of use</a>, and we record which
+      version you accepted and when.</p>
+      <p><strong>Your games.</strong> When a game ends, the app sends our server a summary of it: an identifier for
+      the game, when it ended, the score, the number of pieces placed, the stage reached, how long it took, its
+      stats (such as charms cleared and the biggest combo) and the final board. The server checks that the score is
+      possible, then updates your best score of the week, your best game and your records. It remembers the
+      identifiers of your last 200 games, so a game sent twice counts once.</p>
+      <p><strong>Friends.</strong> Every player has a friend code. You can share it, or an invite link that holds
+      it. Anyone who opens the link sees a web page with your game name, avatar, flag, best score and friend code.
+      On Android, when someone installs the game from that page, Google Play passes the code to the game. When
+      someone adds you with your code, you become friends both ways and see each other on the Friends board. We
+      keep a friendship until one of you removes or blocks the other.</p>
+      <p><strong>Reports and blocks.</strong> If you report a player, we keep the report: who sent it, who it is
+      about, the reason, the name it was about, and the date. We use reports only to moderate names. If we replace
+      a name that broke the rules, we keep the old name and the date on that account, and after the second time
+      the account can no longer type a name. If you block a player, we keep that on your account so the app can
+      hide them from you, until you unblock them.</p>
+      <p><strong>Weekly rewards.</strong> When a week closes, the server ranks every player's best score of the
+      week and adds the reward for your place to your coins and power-ups. It keeps a record of your place and
+      reward for 12 weeks, so the game can show it to you.</p>
+      <p><strong>How long we keep it.</strong> The weekly scores and leaderboards are kept for 8 weeks (the current
+      week and the seven before it) and then deleted. Your profile, best game, records, past weeks, friends and
+      blocks are kept as long as your account exists. Reports are kept until the account that sent them, or the
+      one they are about, is deleted. Deleting your data removes all of it, including the reports you sent and
+      those about you.</p>
+      <p>Where the GDPR applies, we use this information to provide the leaderboards, profile and friends you use
+      in the game (performance of a contract), and to keep names and scores fair and safe for every player (our
+      legitimate interest).</p>
       <h2>Purchases</h2>
       <p>Charmfall sells optional coin packs and bundles. Google Play or Apple's App Store handles the payment,
       under its own terms and privacy policy, and we never see your card or payment details.</p>
@@ -198,8 +248,10 @@
         <li>On Android, you can reset or delete your advertising ID, or opt out of personalised ads, in your
         phone's settings (Settings ▸ Privacy ▸ Ads, or Settings ▸ Google ▸ Ads).</li>
         <li>On iPhone, you can allow or stop tracking at any time in Settings ▸ Privacy &amp; Security ▸ Tracking.</li>
+        <li>You can change your game name and avatar on your profile, and unblock players in the
+        game's settings. Your country follows your phone's region setting.</li>
         <li>You can stop all collection at any time by uninstalling the app. What our server already holds stays
-        until you ask us to delete it.</li>
+        until you <a href="../delete-data/">ask us to delete it</a>.</li>
         <li>If you live in the European Economic Area, the United Kingdom or Switzerland, you have the right
         to access, correct or delete personal data and to object to its processing. To exercise these
         rights, contact us at the address below. You can also complain to your local data protection
@@ -212,8 +264,8 @@
       personal information, contact us and we will delete it.</p>
 
       <h2>Changes to this policy</h2>
-      <p>We may update this policy, for example when we add new features such as leaderboards. We will post the new
-      version on this page and change the "Last updated" date above.</p>
+      <p>We may update this policy. We will post the new version on this page and change the "Last updated" date
+      above.</p>
 
       <h2>Contact</h2>
       <p>Picarol Games<br><a href="mailto:picarol.games+pp@gmail.com">picarol.games+pp@gmail.com</a><br>Spain</p>
